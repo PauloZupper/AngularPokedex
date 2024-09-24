@@ -25,9 +25,6 @@ export class PokemonService {
       .addQueryParam('limit', limit)
       .build();
 
-      return injectQuery(() => ({
-        queryKey: ['fetch-all-pokemons', { limit, offset }],
-        queryFn: () => PokeApi.get<never,RemoteFetchAllPokemon>(path),
-      }))
+      return PokeApi.get<never,RemoteFetchAllPokemon>(path)
   }
 }

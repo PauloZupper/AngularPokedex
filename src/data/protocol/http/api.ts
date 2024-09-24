@@ -10,9 +10,9 @@ type Put = <P, R>(uri: string, data?: P) => Observable<HttpResponse<R>>;
 type Patch = <P, R>(uri: string, data?: P) => Observable<HttpResponse<R>>;
 type Delete = <P, R>(uri: string, data?: P) => Observable<HttpResponse<R>>;
 
-@Injectable({
-  providedIn: 'root',
-})
+// @Injectable({
+//   providedIn: 'root',
+// })
 class Client {
   private baseUrl: string = '';
   private http: HttpClient = Inject(HttpClient)

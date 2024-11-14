@@ -1,7 +1,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import { MenuManager, FeatureManager, ModuleManager, ProfileManager, FeatureToggleManager } from '@domain/usecases'
 
-
+//exemplo para gerenciador de estados
 export type SliceAccessControl = {
   mode:
     'newMenu'
